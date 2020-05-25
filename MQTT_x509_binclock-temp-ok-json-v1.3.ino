@@ -1,11 +1,8 @@
-/* ESP8266 AWS IoT example by Evandro Luis Copercini
+/* Basado en: ESP8266 AWS IoT example by Evandro Luis Copercini
    Public Domain - 2017
-
-    It connects to AWS IoT server then:
+   It connects to AWS IoT server then:
   - publishes "hello world" to the topic "outTopic" every two seconds
   - subscribes to the topic "inTopic", printing out any messages
-
-  -WARNING: this example doesn't verify the server CA due low heap, this can be a security issue
 */
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h> //Get it from here: https://github.com/knolleary/pubsubclient
@@ -213,7 +210,6 @@ void loop() {
     Serial.println(msg);
     client.publish("outTopic" , msg);
     Serial.print("Heap: "); Serial.println(ESP.getFreeHeap()); //Low heap can cause problems
-
-      Serial.println("--------------------------------------------------------------------------------");
+    Serial.println("--------------------------------------------------------------------------------");
   }
 }
