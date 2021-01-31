@@ -55,8 +55,8 @@ unsigned char aws_root_ca_der[] = {
 unsigned int aws_root_ca_der_len = 837;
 
 const char* AWS_endpoint = "a3ndp1z76itiwu-ats.iot.us-east-1.amazonaws.com"; //MQTT broker ip
-const char* ssid = "Wifi@Home";
-const char* password = "33056630";
+const char* ssid = "Wifi Net";
+const char* password = "330...xxx";
 String ThingID = "";
 #define MSG_BUFFER_SIZE  (160)
 int iPeriod = 60000;
